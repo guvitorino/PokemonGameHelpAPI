@@ -1,6 +1,10 @@
 require('dotenv').config()
+require('./database/MongoConfig')
+
 const express = require('express')
 const { errors } = require('celebrate')
+
+const routes = require('../src/routes/Index')
 
 class App {
   constructor () {

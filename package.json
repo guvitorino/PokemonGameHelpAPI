@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon src/Server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "doc": "node swagger.js"
+    "doc": "node swagger.js",
+    "seed": "node src/scripts/PokemonsSeed.js"
   },
   "repository": {
     "type": "git",

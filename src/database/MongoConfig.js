@@ -7,8 +7,7 @@ class MongoConfig {
   }
 
   mongo () {
-    console.log(process.env.MONGO_URL)
-    this.mongoConnection = mongoose.connect('mongodb://localhost:27017/Pokemon', {
+    this.mongoConnection = mongoose.connect(process.env.MONGO_URL, {
       useNewUrlParser: true,
       useFindAndModify: true,
       useUnifiedTopology: true
